@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Info</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href='https://css.gg/arrow-long-up-c.css' rel='stylesheet'>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://kit.fontawesome.com/662f7178a2.js" crossorigin="anonymous"></script>
+ 	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/all.min.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+
+</head>
+<body>
+<!-- Side Menu Start-->
+<div class= "sideMenu">
+	<button id="sideMenu">
+		<i class="fa-solid fa-chevron-right"></i>
+		
+	</button>
+	<a class="logo" href="../home.html">
+	<img   src="../logos/Aniplex.png"/>
+	</a>
+	<div class="search">
+	<i class="fa-solid fa-magnifying-glass"></i>
+	</div>
+	<!-- Menu Start -->
+	<div class="menuContainer">
+		
+	<div class="menu">
+	<i class="fa-solid fa-house"></i>
+	</div>
+	<div class="menu">
+	<i class="fa-solid fa-tv"></i>
+	</div>
+	<div class="menu">
+	<i class="fa-solid fa-book"></i>
+	</div>
+	<div class="menu">
+	<i class="fa-solid fa-users"></i>
+	</div>
+	<div class="menu">
+	<i class="fa-regular fa-circle-play"></i>
+	</div>
+	</div>
+	<!-- Menu End -->
+	
+</div>
+<!-- Side Menu End-->
+
+<div class="animeFormation">
+	<div class="LeftInfo">
+		<img id="img">
+		<div class="score">
+			<div>
+				<img src="../logos/malLogo.png">
+				<p id="score">N/A</p>
+				<p>score</p>
+			</div>
+			<div>
+				<i class="fa-solid fa-heart"></i>
+				<p id="Popularity">N/A</p>
+				<p>Popularity</p>
+			</div>
+			<div>
+				<i class="fa-solid fa-star"></i>
+				<p id="rank">N/A</p>
+				<p>Ranking</p>
+			</div>
+		</div>
+		<div class="genresDiv">
+			<div>
+				<img src="../logos/premiered.png">
+				<div>
+					<p>Premiered</p>
+					<p id="premiered">N/A</p>
+				</div>
+			</div>
+
+			<div>
+				<img src="../logos/status.png">
+				<div>
+					<p>Status</p>
+					<p id="status">N/A</p>
+				</div>
+			</div>
+
+			<div>
+				<img src="../logos/broadcast.png">
+				<div>
+					<p>Broadcast</p>
+					<p id="broadcast">N/A</p>
+				</div>
+			</div>
+
+			<div>
+				<img src="../logos/broadcast.png">
+				<div>
+					<p>Aired</p>
+					<p id="aired">N/A</p>
+				</div>
+			</div>
+
+			<div>
+				<img src="../logos/demographic.png">
+				<div>
+					<p>Demographic</p>
+					<p id="demographic">-</p>
+				</div>
+			</div>
+
+			<div>
+				<img src="../logos/Rating.png">
+				<div>
+					<p>Rating</p>
+					<p id="rating">N/A</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="centerInfo">
+		<div class="topMenu">
+			<h3 id="title">Anime Title</h3>
+			<div class="animeMenu">
+				<button class="bb clicked" id="information">
+					<i class="fa-solid fa-circle-info"></i>
+					<p> Overview</p>
+				</button>
+
+				<button class="bb" id="franchise">
+					<i class="fa-solid fa-book"></i>
+					<p> Franchise</p>
+				</button>
+				<button class="bb" id="characters">
+					<i class="fa-solid fa-users"></i>
+					<p>Characters</p>
+				</button>
+				<button class="bb" id="episode">
+					<i class="fa-solid fa-circle-play"></i>
+					<p>Episodes Guides</p>
+				</button>
+				<button class="bb" id="review">
+					<i class="fa-solid fa-square-pen"></i>
+					<p>Review</p>
+				</button>
+				<button class="bb" id="recommendations">
+					<i class="fa-solid fa-thumbs-up"></i>
+					<p>Recommendation</p>
+				</button>
+			</div>
+		</div>
+
+		<div class="MenuResult">
+			<!-- <div class="sourceMenu">
+				<button class="cllicked">
+					All
+				</button>
+				<button class="cllicked">
+					All
+				</button>
+			</div> -->
+		</div>
+
+	</div>
+	<div class="RightInfo">
+		<div class="mediaMenu">
+			<button id="trail" class="ccl">
+				<i class="fa-regular fa-circle-play"></i>
+				<p>Trailers</p>
+			</button>
+			<button id="photos">
+				<i class="fa-regular fa-image"></i>
+				<p>Photos</p>
+			</button>
+		</div>
+		<div class="mediaResult" id="mediaResult"></div>
+	</div>
+
+</div>
+
+<!-- Content -->
+<!-- <script type="text/javascript" src="../main.js"></script> -->
+<script type="text/javascript" src="../anime.js"></script>
+
+</body>
+</html>

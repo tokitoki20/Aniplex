@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+/*	color	*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+:root {
+	--backgroundColor:  #0B0B0B;
+	--linearGradient: linear-gradient(to bottom,  #FF6433 , #FF493E);
+	--sideLinearGradient: linear-gradient(to bottom,#0B0B0B , #1C1D18) ;
+	--sideStrokeLinearGradient: linear-gradient(to bottom, #0b0b0b00 0%, #8B90A0 35% , #0b0b0b00 100%) ;
+	--textColor:  #EAEAEA;
+	--notSelected : #8B90A0;
+	--cardBackground: #101010;
+	--searchBackground: #311500;
+	--sixtenPadding: 16px;
+	--sixtenMargin: 16px;
+
+}
+
+body {
+	background-color: var(--backgroundColor);
+	display: flex;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*Home Start*/
+.sideMenu {
+	width: 88px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	height: 100vh;
+	background-image: var(--sideLinearGradient);
+	padding: var(--sixtenPadding) 0;
+}
+.sideMenu1 {
+	width: 332px;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	height: 100vh;
+	background-image: var(--sideLinearGradient);
+	padding: var(--sixtenPadding);
+}
+.sideMenu:before,.sideMenu1:before {
+	width: 2px;
+	content: "";
+	position: absolute;
+	top:  0;
+	height: 100%;
+	left: 100%;
+	background-image: var(--sideStrokeLinearGradient);
+}
+
+button {
+	width: 20px;
+	border: none;
+	height: 20px;
+	position: absolute;
+	left: 100%;
+	top: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transform: translateX(-50%);
+	background-color: var(--cardBackground);
+	/*border: 1px solid var(--textColor);*/
+	border-radius: 50%;
+	box-shadow: 0px 0px 5px 1px var(--textColor);
+
+}
+button >  i {
+	font-weight: bold;
+	font-size: 10px;
+	color: var(--textColor);
+}
+button.toleft >  i {
+	font-weight: bold;
+	font-size: 10px;
+	color: var(--textColor);
+	transform: rotate(180deg);
+}
+.logo, .search,.menu,.search1 {
+	width: 56px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 16px;
+	border-radius: 10px;
+	position: relative;
+}
+.search1, .menu.long {
+	width: 316px;
+	justify-content: stretch;
+	padding-left: 16px;
+	align-items: center;
+}
+.menu.long.drop > div{
+	display: flex;
+	    align-items: center;
+}
+.menu.long.drop {
+	justify-content: space-between;
+}
+.menu.long.drop > div > p {
+	color: var(--notSelected);
+	font-weight: bold;
+	height: fit-content;
+}
+.menu.long.drop > i {
+	transform: rotate(90deg);
+	transition: .5s;
+	width: auto;
+}
+.menu.long.drop > div > i,.menu.long > i {
+	margin-right: 16px;
+}
+.logo > img {
+	width: 40px;
+	height: 40px;
+}
+
+.search,.search1 {
+	background-color: var(--searchBackground);
+	border-radius: 10px;
+	position: relative;
+}
+
+.search:before,.search1:before {
+	content: "";
+	position: absolute;
+	width: 102%;
+	height: 102%;
+	border-radius: 10px;
+	background-image: var(--linearGradient);
+	/*background-color: red;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+.search1 > i {
+	margin-right: 16px;
+}
+.search1 > input {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	width: 280px;
+	height: 40px;
+	color: var(--textColor);
+}
+.search1 > input::placeholder {
+	color: #FF6433;
+}
+
+.search1:before {
+	width: 334px;
+	height: 58px;
+}
+.search > i, .search1 > i {
+	font-size: 25px;
+	color: #FF6433;
+	font-weight: bold;
+
+}
+
+.menu {
+	margin-bottom: 8px;
+}
+.menu:before {
+	content: "";
+	position: absolute;
+	width: 102%;
+	height: 102%;
+	border-radius: 10px;
+	background-image: transparent;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: -1;
+}
+.menu:nth-of-type(2)::before {
+
+	background-image: var(--linearGradient);
+}
+
+.menu.long > p ,	.menu.long.drop:hover > div > i,.menu.long.drop:hover > div > p {
+	color: var(--textColor);
+	font-weight: bold;
+}
+.menu.long.drop > div > i  {
+	font-size: 25px;
+	color: var(--notSelected);
+	font-weight: bold;
+	width: 35px;
+}
+.menu > i  {
+	font-size: 25px;
+	color: var(--notSelected);
+	font-weight: bold;
+}
+
+.menu:nth-of-type(2) > i {
+	color: var(--textColor);
+}
+
+.menu:hover:before {
+	background-image: var(--linearGradient);
+
+}
+.menu:hover > i {
+	color: var(--textColor);
+}
+
+.AnimeTabParent {
+	margin-left: calc(16px + 35px);
+	color: var(--notSelected);
+	list-style: none;
+}
+.AnimeTabParent > a {
+	text-decoration: none;
+	height: 56px;
+	padding-left: 16px ;
+	color: var(--notSelected);
+	display: flex;
+	align-items: center;
+}
+.AnimeTabParent > a:hover {
+	background-color: var(--notSelected);
+	color: var(--textColor);
+	border-radius: 10px;
+}
+/*Home End*/
